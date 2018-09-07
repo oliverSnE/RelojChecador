@@ -10,6 +10,29 @@ namespace RelojChecador
     {
         static void Main(string[] args)
         {
+            
+            Administrativo admin = new Administrativo();
+            Empleado emp = new Empleado();
+            Persona pe = new Empleado();
+            Persona pa = new Administrativo();
+            Type t = typeof(object);
+            
+            if (pe is Empleado)
+            {
+                
+            }
+            else if (pa is Administrativo)
+            {
+
+            }
+            else if (t == typeof(Persona))
+            {
+
+            }else if(t == typeof(Empleado))
+            {
+
+            }
+            
         }
     }
 }

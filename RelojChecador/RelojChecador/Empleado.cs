@@ -12,7 +12,10 @@ namespace RelojChecador
         public Turno turno;
         public enum Puesto { intendecia, maestro, asistente, rector, velador};
         public Puesto puesto;
+        public Empleado()
+        {
 
+        }
         public Empleado(string nom, string emp, string cel, Turno t, Puesto p = Puesto.maestro)
         {
             this.nombre = nom;
@@ -21,6 +24,7 @@ namespace RelojChecador
             this.turno = t;
             this.puesto = p;
         }
+
         public bool nuevo(Turno t, Puesto p = Puesto.maestro)
         {
             bool res = false;
